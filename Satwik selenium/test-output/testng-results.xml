@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21306" started-at="2019-08-21T16:04:14Z" finished-at="2019-08-21T16:04:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21306" started-at="2019-08-21T16:04:14Z" finished-at="2019-08-21T16:04:35Z">
+      <class name="TestNG.QuitClose">
+        <test-method status="PASS" signature="close()[pri:0, instance:TestNG.QuitClose@51081592]" name="close" duration-ms="21255" started-at="2019-08-21T16:04:14Z" finished-at="2019-08-21T16:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestNG.QuitClose -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

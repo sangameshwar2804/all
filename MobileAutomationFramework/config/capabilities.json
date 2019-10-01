@@ -1,0 +1,10 @@
+{
+	"platformName": "Android",
+	"platformVersion": "9",
+	"app": "C:/Users/Training/Downloads/Walmart_v19.32.1_apkpure.com.apk",
+	"appPackage": "com.walmart.android",
+	"appActivity": "com.walmart.android.app.main.HomeActivity",
+	"deviceName": "emulator-5554",
+	"noSign": true,
+	"url": "http:0.0.0.0:4723/wd/hub"
+}

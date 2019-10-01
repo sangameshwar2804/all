@@ -1,0 +1,11 @@
+Feature: Login
+  Scenario Outline: Loggedin with Valid credentials
+    Given  user launche goes to login page 
+    When user enters "<name>" and "<password>" , clicks on submit button
+    Then user redirects to dashboard page
+
+ Examples:
+ |name               |password|
+ |admin@yourstore.com|admin|
+ |admin@yourstore.com|admin|
+ |admin@yourstore.com|admin|

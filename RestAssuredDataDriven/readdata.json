@@ -1,0 +1,180 @@
+{"ScoreRangeAPIData": [
+{
+"description": "testcase 1:valid client id 1",
+"headers": {
+"requestTS": "2017-03-15T16:18:30+0000",
+"requestMessageId": "ABCD994056738938383",
+"Content-Type": "Application/json",
+"Client-Id": "VDP5d3d62ff-9152-4e43-839b-38a62d1e9f78",
+"subject-dn": "CN=cdisi-dev.trusted.visa.com,OU=Cdisi-Nginix,O=VISA,C=US,ST=Virginia,L=Ashburn"
+},
+"payload": {
+"vtpModelTypCd": "A",
+"alpAcctProdId": "value1",
+"prodAcctFundSrceCdVcis": "D",
+"issrCtryCd": "304",
+"propentyScoreValMin": "0",
+"propentyScoreValMax": "1",
+"travelFrequencyBand": "domestic",
+"travelDistance": "domestic",
+"airlineBookingRecency": "2 to 3 Months",
+"destincationDiversity": 5
+},
+"expected": {
+"headers": {
+"status-code": 200
+},
+"body": {
+}
+}
+},
+{
+"description": "testcase 2:WithoutRequestMessageId",
+"headers": {
+"requestTS": "2017-03-15T16:18:30+0000",
+"Content-Type": "Application/json",
+"Client-Id": "VDP245a8cbb-95da-41a9-bed8-1a3a22e9f83c",
+"X-AGS-Client-Name": "chase",
+"subject-dn": "CN=cdisi-dev.trusted.visa.com,OU=Cdisi-Nginix,O=VISA,C=US,ST=Virginia,L=Ashburn",
+"X-AGS-Group-Name": "bia",
+"X-Correlation-Id": "23morn"
+},
+"payload": {
+"vtpModelTypCd": "A",
+"alpAcctProdId": "value1",
+"prodAcctFundSrceCdVcis": "D",
+"issrCtryCd": "304",
+"propentyScoreValMin": "0",
+"propentyScoreValMax": "1",
+"travelFrequencyBand": "domestic",
+"travelDistance": "domestic",
+"airlineBookingRecency": "2 to 3 Months",
+"destincationDiversity": 5
+},
+"expected": {
+"headers": {
+"status-code": 200
+},
+"body": {
+}
+}
+},
+{
+"description": "invalid client id case",
+"headers": {
+"requestTS": "2017-03-15T16:18:30+0000",
+"requestMessageId": "ABCD994056738938383",
+"Content-Type": "Application/json",
+"Client-Id": "VDP5d3d62ff-9152-4e43-839b-38a6",
+"subject-dn": "CN=cdisi-dev.trusted.visa.com,OU=Cdisi-Nginix,O=VISA,C=US,ST=Virginia,L=Ashburn"
+},
+"payload": {
+"vtpModelTypCd": "A",
+"alpAcctProdId": "value1",
+"prodAcctFundSrceCdVcis": "D",
+"issrCtryCd": "304",
+"propentyScoreValMin": "0",
+"propentyScoreValMax": "1",
+"travelFrequencyBand": "domestic",
+"travelDistance": "domestic",
+"airlineBookingRecency": "2 to 3 Months",
+"destincationDiversity": 5
+},
+"expected": {
+"headers": {
+"status-code": 403
+},
+"body": {
+}
+}
+},
+{
+"description": "testcase 1:valid client id 1",
+"headers": {
+"requestTS": "2017-03-15T16:18:30+0000",
+"requestMessageId": "ABCD994056738938383",
+"Content-Type": "Application/json",
+"Client-Id": "VDP5d3d62ff-9152-4e43-839b-38a62d1e9f78",
+"subject-dn": "CN=cdisi-dev.trusted.visa.com,OU=Cdisi-Nginix,O=VISA,C=US,ST=Virginia,L=Ashburn"
+},
+"payload": {
+"vtpModelTypCd": "A",
+"alpAcctProdId": "value1",
+"prodAcctFundSrceCdVcis": "D",
+"issrCtryCd": "304",
+"propentyScoreValMin": "0",
+"propentyScoreValMax": "1",
+"travelFrequencyBand": "domestic",
+"travelDistance": "domestic",
+"airlineBookingRecency": "2 to 3 Months",
+"destincationDiversity": 5
+},
+"expected": {
+"headers": {
+"status-code": 200
+},
+"body": {
+}
+}
+},
+{
+"description": "testcase 2:WithoutRequestMessageId",
+"headers": {
+"requestTS": "2017-03-15T16:18:30+0000",
+"Content-Type": "Application/json",
+"Client-Id": "VDP245a8cbb-95da-41a9-bed8-1a3a22e9f83c",
+"X-AGS-Client-Name": "chase",
+"subject-dn": "CN=cdisi-dev.trusted.visa.com,OU=Cdisi-Nginix,O=VISA,C=US,ST=Virginia,L=Ashburn",
+"X-AGS-Group-Name": "bia",
+"X-Correlation-Id": "23morn"
+},
+"payload": {
+"vtpModelTypCd": "A",
+"alpAcctProdId": "value1",
+"prodAcctFundSrceCdVcis": "D",
+"issrCtryCd": "304",
+"propentyScoreValMin": "0",
+"propentyScoreValMax": "1",
+"travelFrequencyBand": "domestic",
+"travelDistance": "domestic",
+"airlineBookingRecency": "2 to 3 Months",
+"destincationDiversity": 5
+},
+"expected": {
+"headers": {
+"status-code": 200
+},
+"body": {
+}
+}
+},
+{
+"description": "invalid client id case",
+"headers": {
+"requestTS": "2017-03-15T16:18:30+0000",
+"requestMessageId": "ABCD994056738938383",
+"Content-Type": "Application/json",
+"Client-Id": "VDP5d3d62ff-9152-4e43-839b-38a6",
+"subject-dn": "CN=cdisi-dev.trusted.visa.com,OU=Cdisi-Nginix,O=VISA,C=US,ST=Virginia,L=Ashburn"
+},
+"payload": {
+"vtpModelTypCd": "A",
+"alpAcctProdId": "value1",
+"prodAcctFundSrceCdVcis": "D",
+"issrCtryCd": "304",
+"propentyScoreValMin": "0",
+"propentyScoreValMax": "1",
+"travelFrequencyBand": "domestic",
+"travelDistance": "domestic",
+"airlineBookingRecency": "2 to 3 Months",
+"destincationDiversity": 5
+},
+"expected": {
+"headers": {
+"status-code": 403
+},
+"body": {
+}
+}
+}
+]}
